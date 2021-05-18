@@ -1,9 +1,11 @@
 import React from 'react'
-
+import Quote from './Quote'
 function QuoteList() {
     return (
-        <div>
-            
+        <div className='flex flex-col container mx-auto '>
+            <Quote />
+            <Quote />
+            <Quote />
         </div>
     )
 }
