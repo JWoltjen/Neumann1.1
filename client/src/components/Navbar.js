@@ -1,18 +1,10 @@
-import React, { useEffect } from 'react'
-import Quote from './Quote'
-import { useDispatch } from 'react-redux'
-import { getQuote } from './actions/quotes'
+import React from 'react'
 //onclick I want to add an element to the quoteList li
 //so our navbars will be like forms in the MERN app, on click, they will axios fetch a new object
 //the fetch call should filter the objects by quote type and random number
 
 export default function Navbar() {
-    const dispatch = useDispatch(); 
-
-useEffect(() => {
-    //this use effect should be turned into a series of "on clicks"
-    dispatch(getQuote()); 
-}, [dispatch])
+ 
 
   return (
     <div className="bg-indigo-600">

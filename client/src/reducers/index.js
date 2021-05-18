@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'; 
-import quotes from './Quotes'
+import quotes from './quotes'
 
 export default combineReducers({
     quotes, 

@@ -3,7 +3,7 @@ export default (quotes = [], action) => {
         case 'FETCH_ALL': 
                 return action.payload
         case 'FETCH_RANDOM':
-                return quotes[0]; 
+                return quotes; 
         case 'CREATE':
             return quotes; 
         default: 
