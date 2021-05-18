@@ -30,8 +30,3 @@ function Quote() {
 }
 
 export default Quote
-
-//should have text
-//author
-//save
-//like
