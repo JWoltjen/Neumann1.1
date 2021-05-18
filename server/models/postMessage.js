@@ -5,12 +5,7 @@ const postSchema = mongoose.Schema({
     author: String, 
     text: String, 
     type: String, 
-    // likeCount: {
-    //     type: Number, 
-    //     default: 0
-    // }
 })
-postSchema.plugin(random)
 
 const PostMessage = mongoose.model('PostMessage', postSchema)
 
