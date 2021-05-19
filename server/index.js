@@ -5,14 +5,15 @@ import dotenv from 'dotenv';
 import quoteRoutes from './routes/quotes.js'
 dotenv.config(); 
 
-const app = express(); 
+const app = express();
+app.use(cors());  
 app.use('/quotes', quoteRoutes)
 
 app.use(express.json());
 app.use(express.urlencoded({
   extended: true
 }));
-app.use(cors()); 
+
 app.get('/', (req, res) => {
   res.send('Hello World')
 })

@@ -5,6 +5,7 @@ import { getQuotes, getQuote, createQuote } from '../actions/quotes'
 export default function Navbar() {
 
   const dispatch = useDispatch(); 
+  
   const playQuote = () => {
     console.log('This is working')
     dispatch(getQuote)
