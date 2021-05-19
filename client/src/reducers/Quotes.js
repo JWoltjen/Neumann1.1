@@ -3,10 +3,11 @@ export default (quotes = [], action) => {
         case 'FETCH_ALL': 
                 return action.payload
         case 'FETCH_RANDOM':
-                return quotes; 
+                return [...quotes, action.payload]; 
         case 'CREATE':
-            return quotes; 
+            return [...quotes, action.payload]
         default: 
+            return quotes
             break; 
     }
 }

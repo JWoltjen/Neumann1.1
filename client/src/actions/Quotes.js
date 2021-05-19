@@ -14,7 +14,7 @@ export const getQuote = () => async (dispatch) => {
         const { data } = await api.getQuote()
         dispatch({ type: 'FETCH_RANDOM', payload: data})
     } catch (error) {
-        
+        console.log(error.message)
     }
 
     
