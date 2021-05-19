@@ -3,12 +3,15 @@ import mongoose from 'mongoose';
 import cors from 'cors'; 
 import dotenv from 'dotenv';
 import quoteRoutes from './routes/quotes.js'
+import factRoutes from './routes/facts.js'
 dotenv.config(); 
 const app = express();
 app.use(cors());  
 
 
 app.use('/quotes', quoteRoutes)
+app.use('/quotes/random', quoteRoutes)
+app.use('/fact', factRoutes)
 app.use(express.json());
 app.use(express.urlencoded({
   extended: true

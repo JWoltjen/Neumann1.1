@@ -29,15 +29,14 @@ export const getRandom = async (req, res) => {
         const count = await Quote.countDocuments()
         const random = Math.floor(Math.random() * count)
         const q = await Quote.findOne().skip(random); 
+        res.status(200).json(q)
         res.json(q)
     } catch (error) {
         res.status(404).json({ message: error.message})
     }
 }
 
-export const getFact = async (req, res) => {
-    try {
-        const count = await Fact.countDocuments()
+export const getFact = async (req, res) => { try { const count = await Fact.countDocuments()
         const random = Math.floor(Math.random() * count)
         const f = await Fact.findOne().skip(random); 
         res.json(f)
@@ -46,7 +45,7 @@ export const getFact = async (req, res) => {
     }
 }
 
-export const getFact = async (req, res) => {
+export const getFallacy = async (req, res) => {
     try {
         const count = await Fallacy.countDocuments()
         const random = Math.floor(Math.random() * count)
