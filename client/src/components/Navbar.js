@@ -1,18 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {useDispatch} from 'react-redux';
 import { getQuotes, getQuote, createQuote } from '../actions/quotes' 
 
 export default function Navbar() {
 
   const dispatch = useDispatch(); 
-  
+
   const playQuote = () => {
-    console.log('This is working')
     dispatch(getQuote)
   }
  
   return (
-    <div className="bg-indigo-600">
+    <div className="Navbar">
       <div className="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between flex-wrap">
           <div className="order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto">
