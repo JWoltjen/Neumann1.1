@@ -50,7 +50,6 @@ export default function Navbar() {
               Cognitive Biases
             </a>
           </div>
-          
         </div>
       </div>
     </div>
