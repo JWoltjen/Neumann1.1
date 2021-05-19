@@ -1,8 +1,8 @@
 import mongoose from 'mongoose'; 
 
 const quoteSchema = new mongoose.Schema({ 
-    text: String,
-    author: String, 
+    name: String,
+    text: String, 
 })
 
 const Quote = mongoose.model('Quote', quoteSchema)
