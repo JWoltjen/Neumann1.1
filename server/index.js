@@ -4,11 +4,11 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import quoteRoutes from './routes/quotes.js'
 dotenv.config(); 
-
 const app = express();
 app.use(cors());  
-app.use('/quotes', quoteRoutes)
 
+
+app.use('/quotes', quoteRoutes)
 app.use(express.json());
 app.use(express.urlencoded({
   extended: true
@@ -17,7 +17,6 @@ app.use(express.urlencoded({
 app.get('/', (req, res) => {
   res.send('Hello World')
 })
-//
 
 const PORT = process.env.PORT || 5000; 
 
