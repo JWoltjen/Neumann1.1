@@ -15,8 +15,22 @@ export default function Navbar() {
       const data = await response.json()
       setCurrentQuote(data)
       setCurrentList([...currentList, currentQuote])
-      console.log(currentList)
+      console.log(currentQuote.text)
+      botVoice(currentQuote.text)
   }
+
+  const botVoice = (message) => {
+    const speech = new SpeechSynthesisUtterance(); 
+    speech.text = message
+    speech.volume = 1; 
+    speech.rate = 1; 
+    speech.pitch = .3; 
+    window.speechSynthesis.speak(speech)
+  }
+
+  useEffect(() => {
+
+  },[currentList])
  
   return (
     <div className="Navbar">
