@@ -1,12 +1,11 @@
 import React from 'react'
-import useFetch from 'react-fetch-hook'
 
-const Philosophy = () => {
+const Philosophy = ({id, text}) => {
 
     return (
         <div className='container mx-auto space-y-6 my-2 bg-green-200 p-2 overflow-auto shadow border-2 border-indigo-200 rounded'>
             <p className='text-justify'>
-                “It never ceases to amaze me: we all love ourselves more than other people, but care more about their opinion than our own.”
+                {text}
             </p>
             <span className='flex space-between center'>
                 <div className='container mx-auto flex space-x-4 content-center'>

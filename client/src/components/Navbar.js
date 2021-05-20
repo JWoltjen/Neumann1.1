@@ -2,12 +2,12 @@ import React, {useState, useEffect} from 'react'
 import {useDispatch} from 'react-redux';
 import QuoteList from './QuoteList'
 import { getQuotes, getRandom, createQuote } from '../actions/quotes' 
+import Philosophy from '../components/Philosophy'
 
 
 export default function Navbar() {
   const [currentQuote, setCurrentQuote] = useState([])
   const [currentList, setCurrentList] = useState([])
-  const [counter, setCounter] = useState(0)
 
 
   const playQuote = async () => {
@@ -74,10 +74,9 @@ export default function Navbar() {
         </div>
       </div>
       <ul>
-        <li>
-          <pre>
-          </pre>
-        </li>
+        {currentList.map(quote => (
+          <Philosophy id={quote.id} text={quote.text}/> 
+        ))}
       </ul>
     </div>
   )
