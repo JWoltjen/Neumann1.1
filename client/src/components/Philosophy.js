@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Philosophy = ({id, text}) => {
+const Philosophy = ({key, text}) => {
 
     return (
         <div className='container mx-auto space-y-6 my-2 bg-green-200 p-2 overflow-auto shadow border-2 border-indigo-200 rounded'>
