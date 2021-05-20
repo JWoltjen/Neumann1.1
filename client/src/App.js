@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import QuoteList from './components/QuoteList';
 import { useDispatch } from 'react-redux'
 import { getQuotes } from './actions/quotes'
-import TestFetch from './components/TestFetch';
+import Philosophy from './components/Philosophy';
 
 
 const App = () => {
@@ -14,7 +14,7 @@ const dispatch = useDispatch();
         <div>
             <Navbar />
             <QuoteList/>
-            <TestFetch/>
+            <Philosophy/>
         </div>
     )
 }
