@@ -8,13 +8,10 @@ import Philosophy from './components/Philosophy';
 
 const App = () => {
 
-const dispatch = useDispatch(); 
-
     return (
         <div>
             <Navbar />
             <QuoteList/>
-            <Philosophy/>
         </div>
     )
 }

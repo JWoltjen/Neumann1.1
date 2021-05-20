@@ -9,7 +9,7 @@ export const getQuotes = () => async (dispatch) => {
     }
 }
 
-export const getQuote = () => async (dispatch) => {
+export const getRandom = () => async (dispatch) => {
     try {
         const { data } = await api.getQuote()
         dispatch({ type: 'FETCH_RANDOM', payload: data})
