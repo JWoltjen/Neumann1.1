@@ -2,6 +2,7 @@ import Quote from '../models/Quote.js'
 import Fact from '../models/Fact.js'
 import Fallacy from '../models/Fallacy.js'
 import Moral from '../models/Moral.js'
+import Bias from '../models/Bias.js'
 
 export const getQuotes = async (req, res) => {
     try {
@@ -24,6 +25,8 @@ export const createQuote = async (req, res) => {
     }
 }
 
+
+
 export const getRandom = async (req, res) => {
     try {
         const count = await Quote.countDocuments()
@@ -36,9 +39,11 @@ export const getRandom = async (req, res) => {
     }
 }
 
-export const getFact = async (req, res) => { try { const count = await Fact.countDocuments()
+export const getBias = async (req, res) => {
+    try {
+        const count = await Bias.countDocuments()
         const random = Math.floor(Math.random() * count)
-        const data = await Fact.findOne().skip(random); 
+        const data = await Bias.findOne().skip(random); 
         res.status(200).json(data)
         res.json(data)
     } catch (error) {
@@ -46,11 +51,10 @@ export const getFact = async (req, res) => { try { const count = await Fact.coun
     }
 }
 
-export const getFallacy = async (req, res) => {
-    try {
-        const count = await Fallacy.countDocuments()
+export const getFact = async (req, res) => { try { 
+        const count = await Fact.countDocuments()
         const random = Math.floor(Math.random() * count)
-        const data = await Fallacy.findOne().skip(random); 
+        const data = await Fact.findOne().skip(random); 
         res.status(200).json(data)
         res.json(data)
     } catch (error) {
@@ -63,7 +67,18 @@ export const getMoral = async (req, res) => {
         const count = await Moral.countDocuments()
         const random = Math.floor(Math.random() * count)
         const data = await Moral.findOne().skip(random);
-        res.status(200).json(data) 
+        res.json(data)
+    } catch (error) {
+        res.status(404).json({ message: error.message})
+    }        
+}
+
+export const getFallacy = async (req, res) => {
+    try {
+        const count = await Fallacy.countDocuments()
+        const random = Math.floor(Math.random() * count)
+        const data = await Fallacy.findOne().skip(random); 
+        res.status(200).json(data)
         res.json(data)
     } catch (error) {
         res.status(404).json({ message: error.message})
