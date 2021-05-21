@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 import quoteRoutes from './routes/quotes.js'
 import factRoutes from './routes/facts.js'
 import moralRoutes from './routes/morals.js'
+import fallacyRoutes from './routes/fallacies.js'
 
 dotenv.config(); 
 const app = express();
@@ -15,6 +16,7 @@ app.use('/quotes', quoteRoutes)
 app.use('/quotes/random', quoteRoutes)
 app.use('/fact', factRoutes)
 app.use('/moral', moralRoutes)
+app.use('/fallacy', fallacyRoutes)
 app.use(express.json());
 app.use(express.urlencoded({
   extended: true

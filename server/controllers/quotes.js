@@ -1,7 +1,7 @@
 import Quote from '../models/Quote.js'
 import Fact from '../models/Fact.js'
 import Fallacy from '../models/Fallacy.js'
-import Moral from '../models/MoralPsych.js'
+import Moral from '../models/Moral.js'
 
 export const getQuotes = async (req, res) => {
     try {
@@ -50,9 +50,9 @@ export const getFallacy = async (req, res) => {
     try {
         const count = await Fallacy.countDocuments()
         const random = Math.floor(Math.random() * count)
-        const f = await Fallacy.findOne().skip(random); 
-        res.status(200).json(f)
-        res.json(f)
+        const data = await Fallacy.findOne().skip(random); 
+        res.status(200).json(data)
+        res.json(data)
     } catch (error) {
         res.status(404).json({ message: error.message})
     }
@@ -62,8 +62,9 @@ export const getMoral = async (req, res) => {
     try {
         const count = await Moral.countDocuments()
         const random = Math.floor(Math.random() * count)
-        const f = await Moral.findOne().skip(random); 
-        res.json(f)
+        const data = await Moral.findOne().skip(random);
+        res.status(200).json(data) 
+        res.json(data)
     } catch (error) {
         res.status(404).json({ message: error.message})
     }
