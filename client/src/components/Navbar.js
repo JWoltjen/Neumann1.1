@@ -23,23 +23,14 @@ export default function Navbar() {
       const data = await response.json()
       setCurrentFact(data)
       setCurrentList([...currentList, currentFact])
-      console.log(currentFact.text)
       botVoice(currentFact.text)
-  }
-    const playPsych = async () => {
-      const response = await fetch('http://localhost:5000/moral/random')
-      const data = await response.json()
-      setCurrentQuote(data)
-      setCurrentList([...currentList, currentQuote])
-      console.log(currentQuote.text)
-      botVoice(currentQuote.text)
   }
     const playFallacy = async () => {
       const response = await fetch('http://localhost:5000/fallacy/random')
       const data = await response.json()
       setCurrentFallacy(data)
       setCurrentList([...currentList, currentFallacy])
-      console.log(currentFallacy.text)
+      botVoice(currentFallacy.name)
       botVoice(currentFallacy.text)
   }
 
@@ -55,7 +46,7 @@ export default function Navbar() {
  
   return (
     <div className="Navbar">
-      <div className="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
+      <div className="bg-green-500 max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between flex-wrap">
           <div className="order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto">
             <a onClick={(playQuote)}
@@ -72,31 +63,17 @@ export default function Navbar() {
             </a>
           </div>
             <div className="order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto">
-            <a onClick={(playPsych)}
-              className="flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-indigo-600 bg-white hover:bg-indigo-50"
-            >
-              Moral Psychology
-            </a>
-          </div>
-            <div className="order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto">
             <a onClick={(playFallacy)}
               className="flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-indigo-600 bg-white hover:bg-indigo-50"
             >
               Logical Fallacies
             </a>
           </div>
-          {/* <div className="order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto">
-            <a onClick={(playQuote)}
-              className="flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-indigo-600 bg-white hover:bg-indigo-50"
-            >
-              Cognitive Biases
-            </a>
-          </div> */}
         </div>
       </div>
       <ul>
         {currentList.map(quote => (
-          <Quote key={quote.id} text={quote.text}/> 
+          <Quote key={quote.id} text={quote.text} name={quote.name}/> 
         ))}
       </ul>
     </div>
