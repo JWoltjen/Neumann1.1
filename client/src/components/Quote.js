@@ -1,11 +1,12 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {library} from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 const Quote = ({key, text, name}) => {
 
+    
     return (
         <div className='container mx-auto space-y-6 my-2 bg-green-200 p-2 overflow-auto shadow border-2 border-indigo-200 rounded'>
-            <h3 className='text-left'>
+            <h3 className='text-left font-bold'>
                 {name}
             </h3>
             <p className='text-justify'>
@@ -17,8 +18,7 @@ const Quote = ({key, text, name}) => {
                         Save
                     </button>
                     <button>
-                        <i className="fab fa-pagelines">
-                        </i>
+                        Like
                     </button>
                     <button>
                         Clear

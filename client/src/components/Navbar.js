@@ -46,8 +46,8 @@ export default function Navbar() {
  
   return (
     <div className="Navbar">
-      <div className="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between flex-wrap">
+      <div className="sticky top-0 max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-around flex-wrap">
           <div className="order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto">
             <a onClick={(playQuote)}
               className="flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-indigo-600 bg-white hover:bg-indigo-50"

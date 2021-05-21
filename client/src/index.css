@@ -9,5 +9,6 @@ body {
   background-size: cover;
 }
 
-.Navbar {
+a {
+  font-family: "Lora", serif;
 }
