@@ -10,5 +10,10 @@ body {
 }
 
 a {
-  font-family: "Lora", serif;
+  font-family: "Catamaran", sans-serif;
+}
+
+h3,
+p {
+  font-family: "Catamaran", sans-serif;
 }
