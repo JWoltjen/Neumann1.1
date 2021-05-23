@@ -4,7 +4,6 @@ export const QuoteContext = createContext();
 
 export const QuoteProvider = (props) => {
     const [quotes, setQuotes] = useState([
-
     ])
 
     const deleteQuote = id => {

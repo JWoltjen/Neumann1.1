@@ -64,7 +64,7 @@ export default function Navbar() {
         </div>
       </div>
       <div>
-        <QuoteList/> 
+        <QuoteList value ={{botVoice}}/> 
       </div>
     </div>
   )
