@@ -12,7 +12,6 @@ export default function Navbar() {
       setQuotes([...quotes, data])
       botVoice(data.text)
   }
-
   const playFact = async () => {
      const response = await fetch('http://localhost:5000/fact/random')
       const data = await response.json()
