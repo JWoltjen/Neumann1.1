@@ -2,7 +2,7 @@ import React, {useContext} from 'react'
 import {QuoteContext} from '../contexts/QuoteContext'
 const Quote = (quote) => {
 
-    const [quotes, setQuotes, deleteQuote] = useContext(QuoteContext)
+    const [quotes, setQuotes, deleteQuote, saveQuote] = useContext(QuoteContext)
 
     const botVoice = (message) => {
     const speech = new SpeechSynthesisUtterance(); 
@@ -24,8 +24,10 @@ const Quote = (quote) => {
             </p>
             <span className='flex space-between center'>
                 <div className='container mx-auto flex space-x-4 content-center'>
-                    <button>
-                        <i class="far fa-save"></i>
+                    <button
+                        onClick={() => saveQuote(quote)}
+                    >
+                        <i className="far fa-save"></i>
                     </button>
                     <button
                         onClick={() => deleteQuote(quote.id)}
@@ -35,7 +37,7 @@ const Quote = (quote) => {
                     <button
                         onClick={() => botVoice(quote.text)}
                     >
-                    <i class="fas fa-assistive-listening-systems"></i>
+                    <i className="fas fa-assistive-listening-systems"></i>
                     </button>
                 </div>
             </span>
