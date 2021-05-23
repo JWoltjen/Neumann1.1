@@ -1,4 +1,4 @@
-import React, {useState, useContext} from 'react'
+import React, { useContext } from 'react'
 import QuoteList from './QuoteList'
 import {QuoteContext} from '../contexts/QuoteContext'
 
@@ -64,7 +64,7 @@ export default function Navbar() {
         </div>
       </div>
       <div>
-        <QuoteList value ={{botVoice}}/> 
+        <QuoteList/> 
       </div>
     </div>
   )

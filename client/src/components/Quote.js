@@ -20,7 +20,9 @@ const Quote = (quote) => {
             </h3>
             <p className='mx-auto text-justify font-normal'>
                 {quote.text}
-                {quote.author}
+             </p>
+             <p>
+                - {quote.author}
             </p>
             <span className='flex space-between center'>
                 <div className='container mx-auto flex space-x-4 content-center'>
