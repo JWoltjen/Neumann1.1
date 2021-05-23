@@ -7,8 +7,12 @@ export const QuoteProvider = (props) => {
 
     ])
 
+    const deleteQuote = id => {
+        setQuotes(quotes.filter(quote => quote._id !== id))
+    }
+
     return(
-        <QuoteContext.Provider value={[quotes, setQuotes]}>
+        <QuoteContext.Provider value={[quotes, setQuotes, deleteQuote]}>
            {props.children}
         </QuoteContext.Provider>
     )

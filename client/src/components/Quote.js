@@ -1,14 +1,12 @@
-import React, {useState, useContext} from 'react'
+import React, {useContext} from 'react'
 import {QuoteContext} from '../contexts/QuoteContext'
 const Quote = (quote) => {
 
-    const [quotes, setQuotes] = useContext(QuoteContext)
-    const deleteQuote = (id) => {
-        quotes.filter(quote => quote.id !== id)
-    }
+    const [quotes, setQuotes, deleteQuote] = useContext(QuoteContext)
     return (
         <div className='container mx-auto space-y-6 my-2 bg-green-300 p-2 overflow-auto shadow border-2 border-indigo-200 rounded'>
             <h3 className='text-left font-black'>
+                {quote.key}
                 {quote.name}
             </h3>
             <p className='mx-auto text-justify font-normal'>

@@ -9,7 +9,7 @@ const QuoteList = () => {
         <div className='quote-container'>
             <ul className='quote-list'>
                 {quotes.map(quote => (
-                    <Quote text={quote.text} name={quote.name} key={quote.id}/>
+                    <Quote text={quote.text} name={quote.name} key={quote._id} id={quote._id}/>
                 ))}
             </ul>
         </div>
