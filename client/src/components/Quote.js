@@ -16,11 +16,11 @@ const Quote = (quote) => {
     return (
         <div className='container mx-auto space-y-6 my-2 bg-green-300 p-2 overflow-auto shadow border-2 border-indigo-200 rounded'>
             <h3 className='text-left font-black'>
-                {quote._id}
                 {quote.name}
             </h3>
             <p className='mx-auto text-justify font-normal'>
                 {quote.text}
+                {quote.author}
             </p>
             <span className='flex space-between center'>
                 <div className='container mx-auto flex space-x-4 content-center'>

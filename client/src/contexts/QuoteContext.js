@@ -10,10 +10,10 @@ export const QuoteProvider = (props) => {
         setQuotes(quotes.filter(quote => quote._id !== id))
     }
 
-    const saveQuote = id => {
-        const saveQuote = quotes.find(quote => id === quote._id)
-        localStorage.setItem(`${saveQuote._id}`, JSON.stringify(saveQuote)
-        )
+    const saveQuote = () => {
+        // localStorage.setItem(quotes.filter(quote => quote._id === id), JSON.stringify(saveQuote)
+        // )
+        console.log('this is working')
     }
 
     return(
