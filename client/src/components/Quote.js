@@ -25,17 +25,17 @@ const Quote = (quote) => {
             <span className='flex space-between center'>
                 <div className='container mx-auto flex space-x-4 content-center'>
                     <button>
-                        Save
+                        <i class="far fa-save"></i>
                     </button>
                     <button
                         onClick={() => deleteQuote(quote.id)}
                     >
-                    <i className='fas fa-trash-alt'></i>   
+                    <i className="fas fa-trash-alt"></i>   
                     </button>
                     <button
                         onClick={() => botVoice(quote.text)}
                     >
-                        Repeat
+                    <i class="fas fa-assistive-listening-systems"></i>
                     </button>
                 </div>
             </span>
