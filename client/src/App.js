@@ -1,13 +1,17 @@
 import React from 'react'; 
 import Navbar from './components/Navbar'; 
 import QuoteList from './components/QuoteList'
-const App = () => {
+import {QuoteProvider} from './contexts/QuoteContext'
 
+const App = () => {
+    
     return (
-        <div>
-            <Navbar />
-            <QuoteList/>
-        </div>
+        <QuoteProvider>
+            <div className="App">
+                <Navbar/>
+                <QuoteList/>
+             </div>
+        </QuoteProvider>
     )
 }
 

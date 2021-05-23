@@ -1,11 +1,9 @@
 import React, {useState} from 'react'
-import {library} from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
 
-const Quote = ({setCurrentList, currentList, id, text, name}) => {
+const Quote = ({setQuotes, quotes, text, name}) => {
 
     const clearQuote = () => {
-        setCurrentList(currentList.filter((el) => el.id !== Quote.id))
+        setQuotes(quotes.filter((quote) => quote.id))
     }
     
     return (

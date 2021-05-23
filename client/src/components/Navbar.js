@@ -1,37 +1,30 @@
-import React, {useState,} from 'react'
-import Quote from './Quote'
+import React, {useState, useContext} from 'react'
+import QuoteList from './QuoteList'
+import {QuoteContext} from '../contexts/QuoteContext'
 
 export default function Navbar() {
-  const [currentQuote, setCurrentQuote] = useState([])
-  const [currentList, setCurrentList] = useState([])
-  const [currentFact, setCurrentFact] = useState([])
-  const [currentFallacy, setCurrentFallacy] = useState([])
-  // const [currentPitch, setCurrentPitch] = useState(.3)
-  // const [currentRate, setCurrentRate] = useState(1)
-  // const [currentVolume, setCurrentVolume] = useState(1)
+
+  const [quotes, setQuotes] = useContext(QuoteContext)
 
   const playQuote = async () => {
       const response = await fetch('http://localhost:5000/quotes/random')
       const data = await response.json()
-      setCurrentQuote(data)
-      setCurrentList([...currentList, currentQuote])
-      botVoice(currentQuote.text)
+      setQuotes([...quotes, data])
+      botVoice(data.text)
   }
 
   const playFact = async () => {
      const response = await fetch('http://localhost:5000/fact/random')
       const data = await response.json()
-      setCurrentFact(data)
-      setCurrentList([...currentList, currentFact])
-      botVoice(currentFact.text)
+      setQuotes([...quotes, data])
+      botVoice(data.text)
   }
     const playFallacy = async () => {
       const response = await fetch('http://localhost:5000/fallacy/random')
       const data = await response.json()
-      setCurrentFallacy(data)
-      setCurrentList([...currentList, currentFallacy])
-      botVoice(currentFallacy.name)
-      botVoice(currentFallacy.text)
+      setQuotes([...quotes, data])
+      botVoice(data.name)
+      botVoice(data.text)
   }
 
   const botVoice = (message) => {
@@ -71,13 +64,10 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <ul>
-        {currentList.map(quote => (
-          <Quote key={quote.id} text={quote.text} name={quote.name}/> 
-        ))}
-      </ul>
+      <div>
+        <QuoteList/> 
+      </div>
     </div>
-
   )
 }
 
