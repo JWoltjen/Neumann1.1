@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# Neumann
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##### a MERN stack project built by Jeff Woltjen
 
-## Available Scripts
+![photo of Marcus Aurelius](https://www.onthisday.com/images/people/marcus-aurelius-medium.jpg)
 
-In the project directory, you can run:
+###### Philosopher-King Marcus Aurelius, author of "Meditations"
 
-### `npm start`
+### What is Neumann?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Neumann, named after Hugarian-American Mathematician John Von Neumann, is a simple application which displays and dictates short philosophical aphorisms, interesting facts about our brain and psychology, and cognitive biases that can distort how we approach problems.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Why was it built?
 
-### `npm test`
+Neumann was built for anyone searching for wisdom. German Poet Johann Wolfgang von Goethe put it succintly when he observed, "The person who cannot live on 3,000 years of knowledge is living hand to mouth." I don't want you to end up in such a sad state. I will do what I can to acquaint you with your historical roots. It is the only way to become a human being. It is the only way to become more than a naked ape. It is the only way to avoid floating in a vacuum.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In our age where society seems to demand us to become hyper-specialized, it is becoming harder to see the forest from the trees. Have you ever run into an individual who was well-educated but at the same time seemed....off? Or how about a person who cannot seem to see a problem from an opposing point of view? It also seems our society has trouble finding nuance in any given situation, which can lead to black and white thinking and the breakdown of good-faith discourse between rational individuals. Neumann was built to help people learn what wisdom is and how to think clearly, in the hopes that their interactions with others may become more meaningful or at least, more understandable. After all, as Philosopher/Emperor Marcus Aurelius observed, "Humans are made for one another; therefore either make them better, or bear with them."
 
-### `npm run build`
+As Neumann will sometimes explain, bite-sized and repeated chunks of information are easiest for us to remember. One of the advantages of Neumann is that it can distill very powerful themes and ideas from some of the world's greatest thinkers into very small bits of observations which are easy to understand and to digest. After all, who has time to read "On the Genealogy of Morality", "Meditations", "The Analects", "Emile," etc., etc. No one! We all have to do taxes, and commute to work, attend to our children, do our homework, and struggle to keep our heads above water! No one has time or brain power left over to explore more abstract concepts, and yet I am convinced doing so is absolutely essential. As Neumann will sometimes say, "Things which matter most must never be at the mercy of those which matter least."
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### How do you use it?
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Neumann was made for people with ADD (like myself) in mind. You can use it for 30 seconds or 30 minutes and still come away with a kernel of truth that perhaps makes your day brighter or your thinking clearer. When we study for a test, we might try to memorize important bite-sized chunks of information so that they become readily acccessible to us when needed. In this manner, Neumann is a study-guide for would-be philosophers, neuroscientists, moral psychologists, or anyone who wants to understand other people and human thought better.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+As Confucius said, "Attack the evil that lies within yourself, rather than the evil that lies within others." Next time you feel like compulsively checking Twitter even though you checked it five minutes ago, I would encourage you to fire up Neumann for 90 seconds instead. I would argue that those 90 seconds will be more fulfilling!
