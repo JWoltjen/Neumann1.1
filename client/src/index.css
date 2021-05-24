@@ -14,12 +14,12 @@ body {
 }
 
 a {
-  font-family: "Catamaran", sans-serif;
+  font-family: "Cinzel", serif;
 }
 
 h3,
 p {
-  font-family: "Catamaran", sans-serif;
+  font-family: "Prata", serif;
 }
 
 .Navbar {
@@ -29,4 +29,8 @@ p {
   -webkit-backdrop-filter: blur(7px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.footer-font {
+  font-family: "Cuprum", sans-serif;
 }
