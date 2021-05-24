@@ -2,7 +2,7 @@ import React, {useContext} from 'react'
 import {QuoteContext} from '../contexts/QuoteContext'
 const Quote = (quote) => {
 
-    const [quotes, setQuotes, deleteQuote, saveQuote] = useContext(QuoteContext)
+    const [quotes, setQuotes, saveQuote, deleteQuote] = useContext(QuoteContext)
 
     const botVoice = (message) => {
     const speech = new SpeechSynthesisUtterance(); 
@@ -15,14 +15,14 @@ const Quote = (quote) => {
   }
     return (
         <div className='container mx-auto space-y-6 my-2 bg-green-300 p-2 overflow-auto shadow border-2 border-indigo-200 rounded'>
-            <h3 className='text-left font-black'>
+            <h3 className='text-left text-3xl font-black'>
                 {quote.name}
             </h3>
-            <p className='mx-auto text-justify font-normal'>
+            <p className='mx-auto text-justify text-xl font-normal'>
                 {quote.text}
              </p>
              <p>
-                - {quote.author}
+                {quote.author}
             </p>
             <span className='flex space-between center'>
                 <div className='container mx-auto flex space-x-4 content-center'>
