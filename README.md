@@ -14,3 +14,5 @@ As Neumann will sometimes explain, bite-sized and repeated chunks of information
 ### How do you use it? 
 Neumann was made for people with ADD (like myself) in mind. You can use it for 30 seconds or 30 minutes and still come away with a kernel of truth that perhaps makes your day brighter or your thinking clearer. When we study for a test, we might try to memorize important bite-sized chunks of information so that they become readily acccessible to us when needed. In this manner, Neumann is a study-guide for would-be philosophers, neuroscientists, moral psychologists, or anyone who wants to understand other people and human thought better.
 
+As Confucius said, "Attack the evil that lies within yourself, rather than the evil that lies within others." Next time you feel like compulsively checking Twitter even though you checked it five minutes ago, I would encourage you to fire up Neumann for 90 seconds instead. I would argue that those 90 seconds will be more fulfilling! 
+
