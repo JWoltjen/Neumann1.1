@@ -1,6 +1,10 @@
 # Neumann
 ##### a MERN stack project built by Jeff Woltjen
 
+
+![photo of Marcus Aurelius](https://www.onthisday.com/images/people/marcus-aurelius-medium.jpg) 
+###### Philosopher-King Marcus Aurelius, author of "Meditations"
+
 ### What is Neumann? 
 Neumann, named after Hugarian-American Mathematician John Von Neumann, is a simple application which displays and dictates short philosophical aphorisms, interesting facts about our brain and psychology, and cognitive biases that can distort how we approach problems. 
 
