@@ -26,11 +26,11 @@ const Quote = (quote) => {
             </p>
             <span className='flex space-between center'>
                 <div className='container mx-auto flex space-x-4 content-center'>
-                    <button
+                    {/* <button
                         onClick={() => saveQuote(quote.id)}
                     >
                         <i className="far fa-save"></i>
-                    </button>
+                    </button> */}
                     <button
                         onClick={() => deleteQuote(quote.id)}
                     >
