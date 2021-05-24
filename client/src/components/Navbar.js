@@ -5,21 +5,22 @@ import {QuoteContext} from '../contexts/QuoteContext'
 export default function Navbar() {
 
   const [quotes, setQuotes] = useContext(QuoteContext)
+  const API = `https://neumann-the-philosophy-bot.herokuapp.com`
 
   const playQuote = async () => {
-      const response = await fetch('http://localhost:5000/quotes/random')
+      const response = await fetch(`${API}/quotes/random`)
       const data = await response.json()
       setQuotes([...quotes, data])
       botVoice(data.text)
   }
   const playFact = async () => {
-     const response = await fetch('http://localhost:5000/fact/random')
+     const response = await fetch(`${API}/fact/random`)
       const data = await response.json()
       setQuotes([...quotes, data])
       botVoice(data.text)
   }
     const playFallacy = async () => {
-      const response = await fetch('http://localhost:5000/fallacy/random')
+      const response = await fetch(`${API}/fallacy/random`)
       const data = await response.json()
       setQuotes([...quotes, data])
       botVoice(data.name)
