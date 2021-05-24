@@ -27,7 +27,7 @@ const Quote = (quote) => {
             <span className='flex space-between center'>
                 <div className='container mx-auto flex space-x-4 content-center'>
                     <button
-                        onClick={() => saveQuote(quote)}
+                        onClick={() => saveQuote(quote.id)}
                     >
                         <i className="far fa-save"></i>
                     </button>

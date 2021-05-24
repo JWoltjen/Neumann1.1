@@ -3,20 +3,21 @@ import React, {useState, useEffect, createContext} from 'react'
 export const QuoteContext = createContext();
 
 export const QuoteProvider = (props) => {
-    const initialState = JSON.parse(localStorage.getItem('quotes') || [])
+    const initialState = JSON.parse(localStorage.getItem('quotes')) || []; 
+    // const [savedQuotes, setSavedQuotes] = useState(initialState)
     const [quotes, setQuotes] = useState(initialState)
     useEffect(() => {
         localStorage.setItem('quotes', JSON.stringify(quotes))
-    }, quotes)
+    }, [quotes])
 
     const deleteQuote = id => {
         setQuotes(quotes.filter(quote => quote._id !== id))
     }
 
-    const saveQuote = () => {
-        // localStorage.setItem(quotes.filter(quote => quote._id === id), JSON.stringify(saveQuote)
+    const saveQuote = id => {
+        console.log(id)
+        // const quoteToSave = localStorage.setItem(quotes.filter(quote => quote._id === id), JSON.stringify(quoteToSave)
         // )
-        console.log('this is working')
     }
 
     return(
